@@ -233,9 +233,9 @@ if [ -r /opt/deployment/example01/build/typo3v11/cms-base-distribution/deploy.sh
 	su - ${USERNAME} -c ". /opt/deployment/example01/build/typo3v11/cms-base-distribution/deploy.sh"
     RETURN=$?
     if [ ${RETURN} -eq 0 ]; then
-        echo "No errors (return code: ${RETURN})"
+        output "No errors (return code: ${RETURN})"
 	else
-        echo "Deployment failed (return code: ${RETURN})"
+        output "Deployment failed (return code: ${RETURN})"
     fi
 fi
 
